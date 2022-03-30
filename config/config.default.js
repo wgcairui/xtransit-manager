@@ -103,17 +103,17 @@ module.exports = appInfo => {
     agent: false,
     clients: {
       xprofiler_console: {
-        host: '',
+        host: 'mariadb',
         port: 3306,
-        user: '',
-        password: '',
+        user: 'root',
+        password: 'ladis@123456',
         database: 'xprofiler_console',
       },
       xprofiler_logs: {
-        host: '',
+        host: 'mariadb',
         port: 3306,
-        user: '',
-        password: '',
+        user: 'root',
+        password: 'ladis@123456',
         database: 'xprofiler_logs',
       },
     },
@@ -124,9 +124,9 @@ module.exports = appInfo => {
     client: {
       sentinels: null,
       port: 6379,
-      host: '',
+      host: 'redis',
       password: '',
-      db: 0,
+      db: 1,
     },
   };
 
@@ -141,7 +141,7 @@ module.exports = appInfo => {
     },
   };
 
-  userConfig.xprofilerConsole = '';
+  userConfig.xprofilerConsole = 'http://172.18.0.1:8443';
 
   return {
     ...config,
