@@ -33,9 +33,9 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "start": "egg-scripts start --title=egg-server-xtransit-manager --port=8543 --workers=1",
+    "start": "egg-scripts start --title=egg-server-xtransit-manager --workers=1",
     "stop": "egg-scripts stop --title=egg-server-xtransit-manager",
-    "dev": "egg-bin dev --port=8543",
+    "dev": "egg-bin dev",
     "debug": "egg-bin debug",
     "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",

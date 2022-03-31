@@ -12,6 +12,15 @@ module.exports = appInfo => {
    **/
   const config = exports = {};
 
+  config.cluster = {
+    listen: {
+      path: '',
+      hostname: '0.0.0.0',
+      port: 8543
+    }
+  };
+
+
   config.keys = appInfo.name + '_1589386223046_7287';
 
   config.middleware = [];
@@ -141,7 +150,7 @@ module.exports = appInfo => {
     },
   };
 
-  userConfig.xprofilerConsole = 'http://172.18.0.1:8443';
+  userConfig.xprofilerConsole = 'http://116.62.48.175:8443';
 
   return {
     ...config,
