@@ -70,7 +70,7 @@ module.exports = appInfo => {
 
   config.processHistoryStorage = 8;
 
-  config.npmRegistry = 'https://registry.npmjs.org';
+  config.npmRegistry = 'https://npmmirror.com';
 
   config.debounceFlagPrefix = 'XTRANSIT_DEBOUNCE_FLAG::';
 
