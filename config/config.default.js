@@ -141,16 +141,16 @@ module.exports = appInfo => {
 
   // mailer
   userConfig.mailer = {
-    host: '',
+    host: 'smtp.qq.com',
     port: 25,
     secure: false,
     auth: {
-      user: '',
-      pass: '',
+      user: '260338538@qq.com',
+      pass: 'erpnxaaqtdpxbhfj',
     },
   };
 
-  userConfig.xprofilerConsole = 'http://116.62.48.175:8443';
+  userConfig.xprofilerConsole = 'http://uart.ladishb.com:8443';
 
   return {
     ...config,
